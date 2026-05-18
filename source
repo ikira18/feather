@@ -1,0 +1,54 @@
+{
+  "name": "iKiraPlus Store",
+  "identifier": "com.ikiraplus.store",
+  "sourceURL": "https://raw.githubusercontent.com/ikira18/feather/main/source.json",
+  "news": [
+    {
+      "title": "كيرا بلس",
+      "identifier": "com.ikiraplus.card",
+      "caption": "قناة كيرا بلس للتطبيقات والشهادات",
+      "date": "2026-05-11",
+      "tintColor": "#7A7DFF",
+      "imageURL": "https://raw.githubusercontent.com/ikira18/feather/main/images/kira-plus-card.jpg",
+      "url": "https://t.me/iKiraPlus"
+    }
+  ],
+  "apps": [
+    {
+      "name": "شهادة مجانية",
+      "bundleIdentifier": "com.ikiraplus.app",
+      "developerName": "iKiraPlus",
+      "version": "4.4",
+      "versionDate": "2026-05-07",
+      "downloadURL": "https://api.khoindvn.io.vn/a71JoP",
+      "iconURL": "https://raw.githubusercontent.com/ikira18/feather/main/images/app-shahada-free.png",
+      "localizedDescription": "ثبت هذا التطبيق ( يوجد بداخله شهادة مضافة مسبقاً )\nلتثبيت التطبيقات والألعاب من خلاله اتبع التالي :\n\nافتح التطبيق \nاذهب الى قسم Library \nاضف ملف ipa الخاص باللعبة او التطبيق المراد تثبيته \nثم اضغط على التطبيق Sign & install \nثم Start \n\nومبروك سيتم تثبيته",
+      "size": "11 MB",
+      "category": "أخرى"
+    },
+    {
+      "name": "ريكرام",
+      "bundleIdentifier": "com.ikiraplus.regram",
+      "developerName": "iKiraPlus",
+      "version": "428.0",
+      "versionDate": "2026-05-08",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/regram-cracked-428.2.0",
+      "iconURL": "https://raw.githubusercontent.com/ikira18/feather/main/images/app-1773401165477.png",
+      "localizedDescription": "لتفعيل مميزات النسخة :\n- قم بتحويل لغة النسخة من الانكليزية الى العربية او بالعكس.",
+      "size": "325.6 MB",
+      "category": "تواصل"
+    },
+    {
+      "name": "Snapchat root",
+      "bundleIdentifier": "com.toyopagroup.picaboo",
+      "developerName": "iKiraPlus",
+      "version": "13.88",
+      "versionDate": "2026-04-21",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/snaproot_v2.3.2-1",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/06/90/5f0690d1-64ae-7c67-8213-a99ce2f9a58c/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "localizedDescription": "حسابك مسؤليتك .........",
+      "size": "206.7 MB",
+      "category": "تواصل"
+    }
+  ]
+}
