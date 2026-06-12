@@ -165,12 +165,12 @@
       "name": "Nicegram",
       "bundleIdentifier": "com.nicegram.Telegram-iOS",
       "developerName": "iKiraPlus",
-      "version": "12.2",
-      "versionDate": null,
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/nicegram-1",
+      "version": "12.8",
+      "versionDate": "2026-06-12",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/nicegram-2.5.3",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/36/b8/6f36b88a-aab5-ea1d-6ba7-bed9a20e2b9f/AppIconLLC-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "localizedDescription": "لتفعيل مميزات النسخه:\nالاعدادات - انزل للاسفل - اضغط على خانة ( اسأل سوالا) ضغطه مطوله",
-      "size": "111.6 MB",
+      "size": "125.9 MB",
       "category": "تواصل"
     },
     {
