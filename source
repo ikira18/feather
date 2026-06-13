@@ -2920,6 +2920,18 @@
       "localizedDescription": "",
       "size": "238.9 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "piano tiles 2",
+      "bundleIdentifier": "com.ikiraplus.piano-tiles-2",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/piano-tiles-2",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b1/db/64/b1db64ec-22f8-0aac-0513-7146e23e25e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "63.8 MB",
+      "category": "ألعاب"
     }
   ]
 }
