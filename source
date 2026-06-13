@@ -2692,6 +2692,18 @@
       "localizedDescription": "",
       "size": "287.2 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "YouTube Al-Asd",
+      "bundleIdentifier": "com.ikiraplus.youtube-al-asd",
+      "developerName": "iKiraPlus",
+      "version": "21.22.4",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/youtube_asd_v21.22.4",
+      "iconURL": "https://thumbs.dreamstime.com/b/red-button-player-social-media-networks-multimedia-symbol-application-movie-video-eps-stock-vector-160216832.jpg",
+      "localizedDescription": "",
+      "size": "134.5 MB",
+      "category": "تواصل"
     }
   ]
 }
