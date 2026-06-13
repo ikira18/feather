@@ -2944,6 +2944,18 @@
       "localizedDescription": "",
       "size": "311.2 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "fruit ninja",
+      "bundleIdentifier": "com.ikiraplus.fruit-ninja",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/fruit-ninja",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/5b/fd/345bfd04-04b8-868d-631f-db6dc1702cfc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "288.8 MB",
+      "category": "ألعاب"
     }
   ]
 }
