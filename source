@@ -2932,6 +2932,18 @@
       "localizedDescription": "",
       "size": "63.8 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "magic tiles 3",
+      "bundleIdentifier": "com.ikiraplus.magic-tiles-3",
+      "developerName": "iKiraPlus",
+      "version": "7.54",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/magic-tiles-3",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/2b/7b/d62b7bfd-6b30-e8c2-a906-910b5011005e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "311.2 MB",
+      "category": "ألعاب"
     }
   ]
 }
