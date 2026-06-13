@@ -2800,6 +2800,18 @@
       "localizedDescription": "",
       "size": "249.2 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds dream",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-dream",
+      "developerName": "iKiraPlus",
+      "version": "2.0.2",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-dream",
+      "iconURL": "https://play-lh.googleusercontent.com/Poj7eNOavvpolZGv2aaMX7ZyWFAQHeFHf-HQqlSvpXgKT0rgYSz4eVAqZE8DZFT2HJjD37iEUYCqrrqvhSNyNCY",
+      "localizedDescription": "",
+      "size": "184.1 MB",
+      "category": "ألعاب"
     }
   ]
 }
