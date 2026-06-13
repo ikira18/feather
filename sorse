@@ -2728,6 +2728,18 @@
       "localizedDescription": "",
       "size": "593.0 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds match",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-match",
+      "developerName": "iKiraPlus",
+      "version": "0.9.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-match",
+      "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-1781374656407.png",
+      "localizedDescription": "",
+      "size": "202.8 MB",
+      "category": "ألعاب"
     }
   ]
 }
