@@ -2740,6 +2740,18 @@
       "localizedDescription": "",
       "size": "202.8 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds rush",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-rush",
+      "developerName": "iKiraPlus",
+      "version": "1.24.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry_birds_rush",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BDxlKYl1K6aXAcPGJr0xAX_SuEPaBSjabVve_ZJ4HA&s=10",
+      "localizedDescription": "",
+      "size": "177.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
