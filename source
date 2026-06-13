@@ -2668,6 +2668,18 @@
       "localizedDescription": "",
       "size": "204.8 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "soccer super hero",
+      "bundleIdentifier": "com.ikiraplus.soccer-super-hero",
+      "developerName": "iKiraPlus",
+      "version": "0.36.3",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/soccer-super-hero_0.36.3",
+      "iconURL": "https://play-lh.googleusercontent.com/dKk_wk3egwxwRoCrdd2ppnx59r0VR6JGrTDkxuP3U4_T9reHv2qkzg3Ya8oeGVNL3ZU=w240-h480-rw",
+      "localizedDescription": "",
+      "size": "194.0 MB",
+      "category": "ألعاب"
     }
   ]
 }
