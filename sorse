@@ -2788,6 +2788,18 @@
       "localizedDescription": "",
       "size": "80.9 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds go",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-go",
+      "developerName": "iKiraPlus",
+      "version": "2.8.3",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-go",
+      "iconURL": "https://sm.ign.com/ign_me/cover/a/angry-birds-go/angry-birds-go_4hx3.jpg",
+      "localizedDescription": "",
+      "size": "249.2 MB",
+      "category": "ألعاب"
     }
   ]
 }
