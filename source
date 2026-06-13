@@ -2908,6 +2908,18 @@
       "localizedDescription": "",
       "size": "217.3 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "head soccer",
+      "bundleIdentifier": "com.ikiraplus.head-soccer",
+      "developerName": "iKiraPlus",
+      "version": "6.22",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/head-soccer",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/4c/75/b44c7559-10a7-5dd6-b48e-abb5f5127c70/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "238.9 MB",
+      "category": "ألعاب"
     }
   ]
 }
