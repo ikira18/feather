@@ -2764,6 +2764,18 @@
       "localizedDescription": "",
       "size": "377.1 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds bounce",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-bounce",
+      "developerName": "iKiraPlus",
+      "version": "1.0.5",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry_birds_bounce",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6AQbJ_d1Zy-o1h1qiOrM79RjQMWup6fHzXqB6Njl4yA&s=10",
+      "localizedDescription": "",
+      "size": "412.3 MB",
+      "category": "ألعاب"
     }
   ]
 }
