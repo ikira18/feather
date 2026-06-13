@@ -2752,6 +2752,18 @@
       "localizedDescription": "",
       "size": "177.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds reloaded",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-reloaded",
+      "developerName": "iKiraPlus",
+      "version": "1.10.13",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-reloaded",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrbMHuOZ0YnpgT5aZ-CUXoCKS6303TIlKvZskqRhVs9ew-gAWALRbUFQA&s=10",
+      "localizedDescription": "",
+      "size": "377.1 MB",
+      "category": "ألعاب"
     }
   ]
 }
