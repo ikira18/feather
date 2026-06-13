@@ -2872,6 +2872,18 @@
       "localizedDescription": "",
       "size": "133.6 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "temple run",
+      "bundleIdentifier": "com.ikiraplus.temple-run",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/templerun",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/62/cd/de/62cdde56-75c6-ef97-32f1-b6aea96b052a/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "80.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
