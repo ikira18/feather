@@ -2860,6 +2860,18 @@
       "localizedDescription": "",
       "size": "169.0 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "temple run 2",
+      "bundleIdentifier": "com.ikiraplus.temple-run-2",
+      "developerName": "iKiraPlus",
+      "version": "1.39.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/temple-run-2-",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d7/03/79d703d4-5a92-0bac-e832-3a820ecb3364/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "133.6 MB",
+      "category": "ألعاب"
     }
   ]
 }
