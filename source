@@ -3016,6 +3016,18 @@
       "localizedDescription": "",
       "size": "1506.6 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "dr driving",
+      "bundleIdentifier": "com.ikiraplus.dr-driving",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/drdriving",
+      "iconURL": "https://images.dwncdn.net/images/t_app-icon-l/p/4a40a318-abe6-4885-a24d-a0e60abce2f2/4004154167/20416_4-76818239-logo",
+      "localizedDescription": "",
+      "size": "10.9 MB",
+      "category": "ألعاب"
     }
   ]
 }
