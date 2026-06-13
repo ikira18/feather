@@ -2776,6 +2776,18 @@
       "localizedDescription": "",
       "size": "412.3 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds star wars",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-star-wars",
+      "developerName": "iKiraPlus",
+      "version": "1.9.24",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-star-wars",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4F3IaZQyFox5jCtTxWzaCaCCkOI4neaKKr9EsEH8nGg&s=10",
+      "localizedDescription": "",
+      "size": "80.9 MB",
+      "category": "ألعاب"
     }
   ]
 }
