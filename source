@@ -2716,6 +2716,18 @@
       "localizedDescription": "",
       "size": "1108.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "leo's fortune",
+      "bundleIdentifier": "com.ikiraplus.leos-fortune",
+      "developerName": "iKiraPlus",
+      "version": "1.0.6",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/leo's-fortune",
+      "iconURL": "https://play-lh.googleusercontent.com/g0n7ApdTLweC9eFh81zn2KeM3JiBrWzSJwx_QrBYNb_xROphOdd0mtGpsp_rXba_88pSJIxeJREEHD0nNI7Rmg",
+      "localizedDescription": "",
+      "size": "593.0 MB",
+      "category": "ألعاب"
     }
   ]
 }
