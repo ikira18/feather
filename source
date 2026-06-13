@@ -2704,6 +2704,18 @@
       "localizedDescription": "",
       "size": "134.5 MB",
       "category": "تواصل"
+    },
+    {
+      "name": "max payne",
+      "bundleIdentifier": "com.ikiraplus.max-payne",
+      "developerName": "iKiraPlus",
+      "version": "2.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/max-payne-v2.0",
+      "iconURL": "https://play-lh.googleusercontent.com/KVdLPCNAQd7atpsaYb0m5opXgxAoyJa4LEqcLx8zxa0qmmyZU1To-tLkXWcxuN_mNtdWqaLRXK1LlVKcAAj0dA4",
+      "localizedDescription": "",
+      "size": "1108.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
