@@ -2992,6 +2992,18 @@
       "localizedDescription": "",
       "size": "1375.8 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "into the dead 2",
+      "bundleIdentifier": "com.ikiraplus.into-the-dead-2",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/into-the-dead-2",
+      "iconURL": "https://play-lh.googleusercontent.com/KJzppbod8tdh0r8Jbh2BheG7zsYzByjlzfjbcvHz4_R-fhDQzBTcJnKgqdlKWDogEQ",
+      "localizedDescription": "",
+      "size": "1753.3 MB",
+      "category": "ألعاب"
     }
   ]
 }
