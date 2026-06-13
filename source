@@ -3028,6 +3028,18 @@
       "localizedDescription": "",
       "size": "10.9 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "six guns",
+      "bundleIdentifier": "com.ikiraplus.six-guns",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/six-guns-gang-showdown",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNu-_LSVPINUTQrH_HU8rKDSU0i5gfOaWFEMZ-1zoBaev71HyJ07IFIps&s=10",
+      "localizedDescription": "",
+      "size": "489.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
