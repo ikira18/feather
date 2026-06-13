@@ -2968,6 +2968,30 @@
       "localizedDescription": "",
       "size": "559.8 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "into the dead",
+      "bundleIdentifier": "com.ikiraplus.into-the-dead",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/intothedead",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDrKGV9r7ZjQxH8nkyhZARlGJ_l4BTjnKKIIWlEbCag&s=10",
+      "localizedDescription": "",
+      "size": "1375.8 MB",
+      "category": "ألعاب"
+    },
+    {
+      "name": "into the dead",
+      "bundleIdentifier": "com.ikiraplus.into-the-dead",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/intothedead",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDrKGV9r7ZjQxH8nkyhZARlGJ_l4BTjnKKIIWlEbCag&s=10",
+      "localizedDescription": "",
+      "size": "1375.8 MB",
+      "category": "ألعاب"
     }
   ]
 }
