@@ -2812,6 +2812,18 @@
       "localizedDescription": "",
       "size": "184.1 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "angry birds transformers",
+      "bundleIdentifier": "com.ikiraplus.angry-birds-transformers",
+      "developerName": "iKiraPlus",
+      "version": "2.40.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/angry-birds-transformers",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPyQB9iMdViIEgd8fl5e9xb5_v_paiV_3rGFvVpjvW4w&s=10",
+      "localizedDescription": "",
+      "size": "342.0 MB",
+      "category": "ألعاب"
     }
   ]
 }
