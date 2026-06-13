@@ -2680,6 +2680,18 @@
       "localizedDescription": "",
       "size": "194.0 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "archery clash",
+      "bundleIdentifier": "com.ikiraplus.archery-clash",
+      "developerName": "iKiraPlus",
+      "version": "0.46.0",
+      "versionDate": "2026-06-13",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/archery-clash_0.46.0",
+      "iconURL": "https://play-lh.googleusercontent.com/t8j6OrA-4tGQRl3W8zu-Dd555dxfRcC_-h4nfek7XojXVYRyIAlxDqcobZB_1IsflomYVfMDxO-zGUwoPfDheA=w240-h480-rw",
+      "localizedDescription": "",
+      "size": "287.2 MB",
+      "category": "ألعاب"
     }
   ]
 }
