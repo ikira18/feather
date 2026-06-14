@@ -3040,6 +3040,18 @@
       "localizedDescription": "",
       "size": "489.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "head basketball",
+      "bundleIdentifier": "com.ikiraplus.head-basketball",
+      "developerName": "iKiraPlus",
+      "version": "4.5.3",
+      "versionDate": "2026-06-14",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/head-basketball",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/aa/2e/6baa2ed8-2fe6-342b-0716-9fabcff9afd9/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "localizedDescription": "",
+      "size": "422.1 MB",
+      "category": "ألعاب"
     }
   ]
 }
