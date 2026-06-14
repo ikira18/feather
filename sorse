@@ -3064,6 +3064,18 @@
       "localizedDescription": "",
       "size": "1287.4 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "nba 2k 20",
+      "bundleIdentifier": "com.ikiraplus.nba-2k-20",
+      "developerName": "iKiraPlus",
+      "version": "1.99.10",
+      "versionDate": "2026-06-14",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/nba-2k20-.com_1.99840.106159_",
+      "iconURL": "https://cdn.prgloo.com/media/3e2f18c4425e4c2bb80f45eebcb71cb1.jpg?width=442&height=663",
+      "localizedDescription": "",
+      "size": "2939.0 MB",
+      "category": "ألعاب"
     }
   ]
 }
