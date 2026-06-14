@@ -3052,6 +3052,18 @@
       "localizedDescription": "",
       "size": "422.1 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "fifa 16",
+      "bundleIdentifier": "com.ikiraplus.fifa-16",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-14",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/fifa-16-ultimate-team",
+      "iconURL": "https://cdn.aptoide.com/imgs/f/8/b/f8b427d4e84d9c0eb5779ccdf440b0e4_icon.png",
+      "localizedDescription": "",
+      "size": "1287.4 MB",
+      "category": "ألعاب"
     }
   ]
 }
