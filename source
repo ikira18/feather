@@ -3076,6 +3076,18 @@
       "localizedDescription": "",
       "size": "2939.0 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "the sims free play",
+      "bundleIdentifier": "com.ikiraplus.the-sims-free-play",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-14",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/sims-freeplay",
+      "iconURL": "https://m.media-amazon.com/images/I/81lzuVd8ksL.png",
+      "localizedDescription": "",
+      "size": "1478.3 MB",
+      "category": "ألعاب"
     }
   ]
 }
