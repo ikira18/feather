@@ -3112,6 +3112,18 @@
       "localizedDescription": "",
       "size": "149.1 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "procreate",
+      "bundleIdentifier": "com.ikiraplus.procreate",
+      "developerName": "iKiraPlus",
+      "version": "5.4.9",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/procreate-5.4.9",
+      "iconURL": "https://yt3.googleusercontent.com/ytc/AIdro_nodCAR388ZAG2uYqxYZTuQ21H_tceLJIrfdGjWOq06g-U=s900-c-k-c0x00ffffff-no-rj",
+      "localizedDescription": "",
+      "size": "964.3 MB",
+      "category": "أدوات"
     }
   ]
 }
