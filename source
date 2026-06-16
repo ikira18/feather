@@ -3160,6 +3160,18 @@
       "localizedDescription": "",
       "size": "2806.2 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "rome total war alexander",
+      "bundleIdentifier": "com.ikiraplus.rome-total-war-alexander",
+      "developerName": "iKiraPlus",
+      "version": "1.13",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/rome_total_war_alexander_v1.13",
+      "iconURL": "https://play-lh.googleusercontent.com/pY_T4YGnHQwkby4OOP2OZKUXbjzeLaOCLGyMQhPmBqy7-i1DCR1NQcljVaPbtRj6y5SPnU1ekjug0dwL4IXWMi8",
+      "localizedDescription": "",
+      "size": "2426.0 MB",
+      "category": "ألعاب"
     }
   ]
 }
