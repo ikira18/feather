@@ -3124,6 +3124,18 @@
       "localizedDescription": "",
       "size": "964.3 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "hello neighbor",
+      "bundleIdentifier": "com.ikiraplus.hello-neighbor",
+      "developerName": "iKiraPlus",
+      "version": "2.3.8",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/hello-neighbor-2.3.8",
+      "iconURL": "https://play-lh.googleusercontent.com/vTEZT3FH4atYE6mTtFTZ9qnuHYNbSwRBmblUMNiRHmagmq4N-QJTzJw8bh8j7jbWwcHYHNBg_20NO9cbV7LG8w=w240-h480-rw",
+      "localizedDescription": "",
+      "size": "1381.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
