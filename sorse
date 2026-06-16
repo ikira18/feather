@@ -3100,6 +3100,18 @@
       "localizedDescription": "",
       "size": "132.6 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "veed shorts ai videos",
+      "bundleIdentifier": "com.ikiraplus.veed-shorts-ai-videos",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/veed-shorts-ai-videos",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/ac/1b/69ac1bdf-4943-adda-320e-7b816a740bb5/Placeholder.mill/400x400bb-75.webp",
+      "localizedDescription": "",
+      "size": "149.1 MB",
+      "category": "أدوات"
     }
   ]
 }
