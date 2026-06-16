@@ -3088,6 +3088,18 @@
       "localizedDescription": "",
       "size": "1478.3 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "polish ai photo editor",
+      "bundleIdentifier": "com.ikiraplus.polish-ai-photo-editor",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/polish-ai-photo-editor",
+      "iconURL": "https://play-lh.googleusercontent.com/q-z-Sbn2WLCUb4MSmmdhVr9KRfJ4qTlgoQEUGEKsnfVEEMNPxsabpr-yngqQ15o5b6gLhaBOhGZNv6oBWDMl",
+      "localizedDescription": "",
+      "size": "132.6 MB",
+      "category": "أدوات"
     }
   ]
 }
