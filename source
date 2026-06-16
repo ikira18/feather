@@ -3148,6 +3148,18 @@
       "localizedDescription": "",
       "size": "120.3 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "rome total war",
+      "bundleIdentifier": "com.ikiraplus.rome-total-war",
+      "developerName": "iKiraPlus",
+      "version": "1.10.5",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/rome_total_war_v1.10.5",
+      "iconURL": "https://play-lh.googleusercontent.com/QcH_bf3yqacgufE3ghOEg_0NhfD9EKPSASGhKAkxOJHlO2L8g1gYFY1z2xuQfN7CAfYpqXsZKe1sK-S2ltErAw",
+      "localizedDescription": "",
+      "size": "2806.2 MB",
+      "category": "ألعاب"
     }
   ]
 }
