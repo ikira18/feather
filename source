@@ -3136,6 +3136,18 @@
       "localizedDescription": "",
       "size": "1381.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "getting over it",
+      "bundleIdentifier": "com.ikiraplus.getting-over-it",
+      "developerName": "iKiraPlus",
+      "version": "1.14",
+      "versionDate": "2026-06-16",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/getting-over-it-v1.14",
+      "iconURL": "https://www.latestmodapks.com/wp-content/uploads/2022/09/Getting-Over-It-APK.jpg",
+      "localizedDescription": "",
+      "size": "120.3 MB",
+      "category": "ألعاب"
     }
   ]
 }
