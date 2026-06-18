@@ -2579,7 +2579,7 @@
       "developerName": "iKiraPlus",
       "version": "4.4",
       "versionDate": "2026-06-18",
-      "downloadURL": "itms-services://?action=download-manifest&url=https://api.betadrop.app/api/manifest/rU667T",
+      "downloadURL": "itms-services://?action=download-manifest&url=https%3A%2F%2Fapi.betadrop.app%2Fapi%2Fguest%2Fmanifest%2FGSM2Qe",
       "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-shahada-free.png",
       "localizedDescription": "ثبت هذا التطبيق ( يوجد بداخله شهادة مضافة مسبقاً)\nلتثبيت التطبيقات والألعاب من خلاله اتبع التالي :\n\nافتح التطبيق \nاذهب الى قسم Library \nاضف ملف ipa الخاص باللعبة او التطبيق المراد تثبيته \nثم اضغط على التطبيق Sign & install \nثم Start \n\nومبروك سيتم تثبيته",
       "size": "11 MB",
