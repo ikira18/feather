@@ -3292,6 +3292,18 @@
       "localizedDescription": "",
       "size": "1680.1 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "polarr",
+      "bundleIdentifier": "com.ikiraplus.polarr",
+      "developerName": "iKiraPlus",
+      "version": "6.12.1",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/polarr_photo_filters_&_editor",
+      "iconURL": "https://img.utdstc.com/icon/573/26f/57326f93ff7562f94a567292977a41c916c55c5d3b29f81da249f876ae6e34fe:600",
+      "localizedDescription": "",
+      "size": "144.1 MB",
+      "category": "أدوات"
     }
   ]
 }
