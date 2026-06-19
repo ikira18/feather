@@ -3184,6 +3184,18 @@
       "localizedDescription": "",
       "size": "287.8 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "lunar proxy for minecraft",
+      "bundleIdentifier": "com.ikiraplus.lunar-proxy-for-minecraft",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/lunar-proxy-for-minecraft-pe",
+      "iconURL": "https://avatars.githubusercontent.com/u/140298967?s=280&v=4",
+      "localizedDescription": "",
+      "size": "31.0 MB",
+      "category": "أدوات"
     }
   ]
 }
