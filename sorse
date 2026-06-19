@@ -129,12 +129,12 @@
       "name": "Swiftgram",
       "bundleIdentifier": "org.swiftgram.Telegram",
       "developerName": "iKiraPlus",
-      "version": "12.7.1",
-      "versionDate": "2026-05-23",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/swiftgram_12.7_lead",
+      "version": "12.8",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/swiftgram_12.8_lead_1.4.2",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/d5/fa/c1d5faba-f9f3-2b37-959b-4e69452bb301/Swiftgram-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
       "localizedDescription": "لتفعيل مميزات النسخة اتبع التالي :\n- الاعدادات - انزل للاسفل - اضغط ضغطة مطوله على ايقونه ( اسال سوالا )\nومبروك تم فتح المميزات",
-      "size": "81.9 MB",
+      "size": "78.0 MB",
       "category": "تواصل"
     },
     {
