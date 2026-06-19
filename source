@@ -45,12 +45,12 @@
       "name": "WhatsApp Gold",
       "bundleIdentifier": "com.nspoons.WhatsAppSB",
       "developerName": "iKiraPlus",
-      "version": "26.20",
-      "versionDate": "2026-05-08",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/whatsappgold_2.0",
+      "version": "26.22",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/wgold_2.1",
       "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-1773436028095.png",
       "localizedDescription": "سجل بالنسخة كجهاز مصاحب فقطططط.",
-      "size": "128.2 MB",
+      "size": "134.3 MB",
       "category": "تواصل"
     },
     {
