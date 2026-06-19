@@ -3277,8 +3277,20 @@
       "versionDate": "2026-06-19",
       "downloadURL": "https://dl.ikiraplus.workers.dev/dl/war-drone-3d-shooting",
       "iconURL": "https://play-lh.googleusercontent.com/6EsuG7Qj5rp2f-wjo91pwio-DdDwDhxnH9c2Nsoyv84VncD74HneUv_6_ewpeu4A4hg35Q9fJctOAuCyGluX1g=w526-h296-rw",
-      "localizedDescription": "d",
+      "localizedDescription": "",
       "size": "152.1 MB",
+      "category": "ألعاب"
+    },
+    {
+      "name": "goat simulator 3 - multiverse",
+      "bundleIdentifier": "com.ikiraplus.goat-simulator-3---multiverse",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/goat-simulator-3-multiverse",
+      "iconURL": "https://bleedingcool.com/wp-content/uploads/2024/06/Goat-Simulator-3-Multiverse-Of-Nonsense-DLC-900x900.jpg",
+      "localizedDescription": "",
+      "size": "1680.1 MB",
       "category": "ألعاب"
     }
   ]
