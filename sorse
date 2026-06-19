@@ -3316,6 +3316,18 @@
       "localizedDescription": "",
       "size": "236.2 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "clipboard pro",
+      "bundleIdentifier": "com.ikiraplus.clipboard-pro",
+      "developerName": "iKiraPlus",
+      "version": "1.27",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/clipboard",
+      "iconURL": "https://ipaomtk.com/wp-content/uploads/2023/04/images-12.jpg",
+      "localizedDescription": "",
+      "size": "18.1 MB",
+      "category": "أدوات"
     }
   ]
 }
