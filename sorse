@@ -3340,6 +3340,18 @@
       "localizedDescription": "",
       "size": "121.1 MB",
       "category": "دراسة وذكاء اصطناعي"
+    },
+    {
+      "name": "cute cut pro",
+      "bundleIdentifier": "com.ikiraplus.cute-cut-pro",
+      "developerName": "iKiraPlus",
+      "version": "2.3.9",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/cute-cut-pro",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-5vprXDReVth-POrW9Nj6IXHJthrZqPFz1zFPA9ZHw&s=10",
+      "localizedDescription": "",
+      "size": "62.5 MB",
+      "category": "أدوات"
     }
   ]
 }
