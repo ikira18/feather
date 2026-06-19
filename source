@@ -3304,6 +3304,18 @@
       "localizedDescription": "",
       "size": "144.1 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "funimate video editor",
+      "bundleIdentifier": "com.ikiraplus.funimate-video-editor",
+      "developerName": "iKiraPlus",
+      "version": "17.2",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/funimate-video-editor",
+      "iconURL": "https://play-lh.googleusercontent.com/yvkR0KYBGU4ZpZvn8gey7Bb6xNpQZ1Pn_xK6mX5zF8LmkwvgEdyoTYDkGPPOzbIVVFrOxNu7C18G2y8yhRGI",
+      "localizedDescription": "",
+      "size": "236.2 MB",
+      "category": "أدوات"
     }
   ]
 }
