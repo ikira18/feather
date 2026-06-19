@@ -3328,6 +3328,18 @@
       "localizedDescription": "",
       "size": "18.1 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "ilove pdf",
+      "bundleIdentifier": "com.ikiraplus.ilove-pdf",
+      "developerName": "iKiraPlus",
+      "version": "4.0.2",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/ilovepdf_pdf_editor_&_scan",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6DCpo_BNCx0yEEUhuPYmq_ev64HQnXOzX8UivAOskQ&s=10",
+      "localizedDescription": "",
+      "size": "121.1 MB",
+      "category": "دراسة وذكاء اصطناعي"
     }
   ]
 }
