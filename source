@@ -369,12 +369,12 @@
       "name": "RyukGram",
       "bundleIdentifier": "com.ryukgram.Telegram",
       "developerName": "iKiraPlus",
-      "version": "433.0.0",
-      "versionDate": "2026-06-10",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/ryukgram-433.0.0_ry",
+      "version": "434.0.0",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/ryukgram-1.3.2",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/ef/ec/eeefec6f-582d-90c7-ac6c-ea2ed8fd269a/Prod-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
       "localizedDescription": "",
-      "size": "323.3 MB",
+      "size": "310.0 MB",
       "category": "تواصل"
     },
     {
