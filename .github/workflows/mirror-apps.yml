@@ -1,63 +1,63 @@
-name: Mirror IPAs to install repo
+name: Mirror IPAs - Remaining Only
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * 0'
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
+    timeout-minutes: 340
 
     steps:
-      - name: Mirror IPAs from source to install/releases
+      - name: Mirror remaining IPAs
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           TARGET_REPO: "ikira18/install"
           TAG: "ipa-mirror"
         run: |
-          # جيب الـ source بالتوكن
+          # جيب الـ source
           curl -s \
             -H "Authorization: token $GH_PAT" \
             "https://raw.githubusercontent.com/ikira18/feather/main/source" \
             -o source.json
 
-          # تحقق إن الملف صح
-          if ! node -e "JSON.parse(require('fs').readFileSync('source.json','utf8'))" 2>/dev/null; then
-            echo "❌ فشل تحميل source.json"
-            cat source.json
-            exit 1
-          fi
+          # جيب قائمة الملفات الموجودة بالريليس
+          GH_TOKEN=$GH_PAT gh release view "$TAG" \
+            -R "$TARGET_REPO" \
+            --json assets \
+            --jq '.assets[].name' > existing.txt
 
-          # استخرج التطبيقات
+          echo "📦 موجود بالريليس: $(wc -l < existing.txt) ملف"
+
+          # استخرج التطبيقات الناقصة فقط
           node -e "
-            const data = JSON.parse(require('fs').readFileSync('source.json','utf8'));
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('source.json','utf8'));
+            const existing = new Set(
+              fs.readFileSync('existing.txt','utf8')
+                .trim().split('\n')
+                .map(f => f.trim())
+            );
             data.apps.forEach(a => {
               if (a.downloadURL && a.downloadURL.includes('dl.ikiraplus.workers.dev')) {
                 const slug = a.downloadURL.split('/dl/')[1];
-                console.log(a.name + '|' + a.downloadURL + '|' + slug);
+                const filename = slug + '.ipa';
+                if (!existing.has(filename)) {
+                  console.log(a.name + '|' + a.downloadURL + '|' + slug);
+                }
               }
             });
-          " > apps_list.txt
+          " > remaining.txt
 
-          TOTAL=$(wc -l < apps_list.txt)
-          echo "📋 عدد التطبيقات: $TOTAL"
+          TOTAL=$(wc -l < remaining.txt)
+          echo "⏳ متبقي للتحميل: $TOTAL تطبيق"
 
-          # إنشاء الريليس إذا ما موجود
-          if ! GH_TOKEN=$GH_PAT gh release view "$TAG" -R "$TARGET_REPO" > /dev/null 2>&1; then
-            GH_TOKEN=$GH_PAT gh release create "$TAG" \
-              -R "$TARGET_REPO" \
-              --title "IPA Mirror — iKiraPlus Store" \
-              --notes "ميرور تلقائي لتطبيقات متجر iKiraPlus" \
-              --prerelease
-            echo "✅ تم إنشاء الريليس"
-          else
-            echo "ℹ️ الريليس موجود، سيتم التحديث"
+          if [ "$TOTAL" -eq 0 ]; then
+            echo "✅ كل التطبيقات موجودة!"
+            exit 0
           fi
 
-          PASS=0
-          FAIL=0
-          COUNT=0
+          PASS=0; FAIL=0; COUNT=0
 
           while IFS='|' read -r NAME URL SLUG; do
             COUNT=$((COUNT+1))
@@ -71,20 +71,18 @@ jobs:
               "$URL")
 
             if [ "$HTTP" = "200" ] && [ -s "$FILENAME" ]; then
-              SIZE=$(du -sh "$FILENAME" | cut -f1)
-              echo "   ✅ $SIZE — جاري الرفع..."
+              echo "  ✅ $(du -sh $FILENAME | cut -f1) — رفع..."
               GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
               PASS=$((PASS+1))
             else
-              echo "   ❌ فشل (HTTP $HTTP)"
+              echo "  ❌ فشل HTTP $HTTP"
               FAIL=$((FAIL+1))
             fi
-
             rm -f "$FILENAME"
-          done < apps_list.txt
+          done < remaining.txt
 
           echo ""
-          echo "================================"
-          echo "✅ نجح: $PASS تطبيق"
-          echo "❌ فشل: $FAIL تطبيق"
-          echo "================================"
+          echo "========================"
+          echo "✅ نجح: $PASS"
+          echo "❌ فشل: $FAIL"
+          echo "========================"
