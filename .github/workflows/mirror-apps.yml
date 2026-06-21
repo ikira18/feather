@@ -15,6 +15,8 @@ jobs:
           TARGET_REPO: "ikira18/install"
           TAG: "ipa-mirror"
         run: |
+          set +e
+
           curl -s \
             -H "Authorization: token $GH_PAT" \
             "https://raw.githubusercontent.com/ikira18/feather/main/source" \
@@ -85,11 +87,18 @@ jobs:
                 SKIP=$((SKIP+1))
                 continue
               fi
+
               echo "  ✅ $(du -sh $FILENAME | cut -f1) — رفع..."
-              GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO" || echo "  ⚠️ فشل الرفع، متابعة..."
+              GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
+              if [ $? -ne 0 ]; then
+                echo "  ⚠️ فشل الرفع — تجاهل والمتابعة"
+                rm -f "$FILENAME"
+                FAIL=$((FAIL+1))
+                continue
+              fi
               PASS=$((PASS+1))
             else
-              echo "  ❌ فشل HTTP $HTTP"
+              echo "  ❌ فشل التحميل HTTP $HTTP"
               FAIL=$((FAIL+1))
             fi
             rm -f "$FILENAME"
