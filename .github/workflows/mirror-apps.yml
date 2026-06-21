@@ -2,9 +2,6 @@ name: Mirror IPAs - Remaining Only
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Mirror IPAs - Remaining Only"]
-    types: [completed]
 
 jobs:
   mirror:
@@ -52,7 +49,7 @@ jobs:
           echo "⏳ متبقي: $TOTAL تطبيق"
 
           if [ "$TOTAL" -eq 0 ]; then
-            echo "✅ كل التطبيقات موجودة! لا يوجد شي للتحميل."
+            echo "✅ كل التطبيقات موجودة!"
             exit 0
           fi
 
@@ -64,14 +61,13 @@ jobs:
             echo ""
             echo "[$COUNT/$TOTAL] ⬇️  $NAME"
 
-            # تحقق من الحجم قبل التحميل
             SIZE_BYTES=$(curl -sI \
               -H "User-Agent: Mozilla/5.0" \
               -L "$URL" | grep -i content-length | tail -1 | tr -d '\r' | awk '{print $2}')
 
             if [ -n "$SIZE_BYTES" ] && [ "$SIZE_BYTES" -gt 1073741824 ] 2>/dev/null; then
               SIZE_GB=$(echo "scale=2; $SIZE_BYTES/1073741824" | bc)
-              echo "  ⏭️  تجاهل — الحجم ${SIZE_GB}GB (أكبر من 1GB)"
+              echo "  ⏭️  تجاهل — الحجم ${SIZE_GB}GB"
               SKIP=$((SKIP+1))
               continue
             fi
@@ -84,7 +80,7 @@ jobs:
             if [ "$HTTP" = "200" ] && [ -s "$FILENAME" ]; then
               ACTUAL_SIZE=$(stat -c%s "$FILENAME")
               if [ "$ACTUAL_SIZE" -gt 1073741824 ]; then
-                echo "  ⏭️  تجاهل بعد التحميل — الحجم كبير"
+                echo "  ⏭️  تجاهل — الحجم كبير بعد التحميل"
                 rm -f "$FILENAME"
                 SKIP=$((SKIP+1))
                 continue
@@ -107,13 +103,13 @@ jobs:
           echo "========================"
 
       - name: Trigger next run if still remaining
+        if: always()
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          # تحقق إذا لا يزال يوجد تطبيقات ناقصة
           REMAINING=$(wc -l < remaining.txt 2>/dev/null || echo 0)
           if [ "$REMAINING" -gt 0 ]; then
-            echo "🔄 لا يزال يوجد $REMAINING تطبيق — تشغيل الدورة القادمة..."
+            echo "🔄 لا يزال يوجد تطبيقات — تشغيل الدورة القادمة..."
             curl -s -X POST \
               -H "Authorization: token $GH_PAT" \
               -H "Accept: application/vnd.github.v3+json" \
