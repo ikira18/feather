@@ -1,53 +1,63 @@
-name: Mirror IPAs to gta Repo Release
+name: Mirror IPAs to install repo
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 0'
+    - cron: '0 2 * * 0'   # كل أحد الساعة 2 صبح
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Mirror IPAs to gta repo
+      - name: Mirror IPAs from source to install/releases
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}   # مو GITHUB_TOKEN — لازم PAT
-          TARGET_REPO: "ikiraplus/gta"       # ← غير هذا لاسم ريبوك
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          SOURCE_REPO: "ikira18/feather"
+          TARGET_REPO: "ikira18/install"
           TAG: "ipa-mirror"
         run: |
+          # جيب الـ source
+          curl -s \
+            -H "Authorization: token $GH_PAT" \
+            "https://raw.githubusercontent.com/$SOURCE_REPO/main/source" \
+            -o source.json
+
+          # استخرج التطبيقات
           node -e "
-            const data = require('./jom.json');
-            const apps = data.apps.filter(a =>
-              a.ipaUrl && a.ipaUrl.includes('dl.ikiraplus.workers.dev')
-            );
-            apps.forEach(a => {
-              const slug = a.ipaUrl.split('/dl/')[1];
-              console.log(a.id + '|' + a.name + '|' + a.ipaUrl + '|' + slug);
+            const data = JSON.parse(require('fs').readFileSync('source.json','utf8'));
+            data.apps.forEach(a => {
+              if (a.downloadURL && a.downloadURL.includes('dl.ikiraplus.workers.dev')) {
+                const slug = a.downloadURL.split('/dl/')[1];
+                console.log(a.name + '|' + a.downloadURL + '|' + slug);
+              }
             });
           " > apps_list.txt
 
-          echo "📋 Found $(wc -l < apps_list.txt) apps"
+          TOTAL=$(wc -l < apps_list.txt)
+          echo "📋 عدد التطبيقات: $TOTAL"
 
-          # إنشاء ريليس بالريبو الثاني إذا ما موجود
+          # إنشاء الريليس إذا ما موجود
           if ! gh release view "$TAG" -R "$TARGET_REPO" > /dev/null 2>&1; then
             gh release create "$TAG" \
               -R "$TARGET_REPO" \
               --title "IPA Mirror — iKiraPlus Store" \
-              --notes "تحديث تلقائي" \
+              --notes "ميرور تلقائي لتطبيقات متجر iKiraPlus" \
               --prerelease
+            echo "✅ تم إنشاء الريليس"
+          else
+            echo "ℹ️ الريليس موجود، سيتم التحديث"
           fi
 
-          PASS=0; FAIL=0
+          PASS=0
+          FAIL=0
+          COUNT=0
 
-          while IFS='|' read -r ID NAME URL SLUG; do
+          while IFS='|' read -r NAME URL SLUG; do
+            COUNT=$((COUNT+1))
             FILENAME="${SLUG}.ipa"
-            echo "⬇️  $NAME"
+            echo ""
+            echo "[$COUNT/$TOTAL] ⬇️  $NAME"
 
             HTTP=$(curl -s -o "$FILENAME" -w "%{http_code}" \
               -L --max-time 600 --retry 2 \
@@ -55,15 +65,20 @@ jobs:
               "$URL")
 
             if [ "$HTTP" = "200" ] && [ -s "$FILENAME" ]; then
-              echo "✅ $(du -sh $FILENAME | cut -f1) — uploading..."
+              SIZE=$(du -sh "$FILENAME" | cut -f1)
+              echo "   ✅ $SIZE — جاري الرفع..."
               gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
               PASS=$((PASS+1))
             else
-              echo "❌ Failed HTTP $HTTP"
+              echo "   ❌ فشل (HTTP $HTTP)"
               FAIL=$((FAIL+1))
             fi
 
             rm -f "$FILENAME"
           done < apps_list.txt
 
-          echo "✅ $PASS done | ❌ $FAIL failed"
+          echo ""
+          echo "================================"
+          echo "✅ نجح: $PASS تطبيق"
+          echo "❌ فشل: $FAIL تطبيق"
+          echo "================================"
