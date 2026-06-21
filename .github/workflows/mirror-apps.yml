@@ -3,7 +3,7 @@ name: Mirror IPAs to install repo
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 0'   # كل أحد الساعة 2 صبح
+    - cron: '0 2 * * 0'
 
 jobs:
   mirror:
@@ -12,16 +12,22 @@ jobs:
     steps:
       - name: Mirror IPAs from source to install/releases
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-          SOURCE_REPO: "ikira18/feather"
+          GH_PAT: ${{ secrets.GH_PAT }}
           TARGET_REPO: "ikira18/install"
           TAG: "ipa-mirror"
         run: |
-          # جيب الـ source
+          # جيب الـ source بالتوكن
           curl -s \
             -H "Authorization: token $GH_PAT" \
-            "https://raw.githubusercontent.com/$SOURCE_REPO/main/source" \
+            "https://raw.githubusercontent.com/ikira18/feather/main/source" \
             -o source.json
+
+          # تحقق إن الملف صح
+          if ! node -e "JSON.parse(require('fs').readFileSync('source.json','utf8'))" 2>/dev/null; then
+            echo "❌ فشل تحميل source.json"
+            cat source.json
+            exit 1
+          fi
 
           # استخرج التطبيقات
           node -e "
@@ -38,8 +44,8 @@ jobs:
           echo "📋 عدد التطبيقات: $TOTAL"
 
           # إنشاء الريليس إذا ما موجود
-          if ! gh release view "$TAG" -R "$TARGET_REPO" > /dev/null 2>&1; then
-            gh release create "$TAG" \
+          if ! GH_TOKEN=$GH_PAT gh release view "$TAG" -R "$TARGET_REPO" > /dev/null 2>&1; then
+            GH_TOKEN=$GH_PAT gh release create "$TAG" \
               -R "$TARGET_REPO" \
               --title "IPA Mirror — iKiraPlus Store" \
               --notes "ميرور تلقائي لتطبيقات متجر iKiraPlus" \
@@ -67,7 +73,7 @@ jobs:
             if [ "$HTTP" = "200" ] && [ -s "$FILENAME" ]; then
               SIZE=$(du -sh "$FILENAME" | cut -f1)
               echo "   ✅ $SIZE — جاري الرفع..."
-              gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
+              GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
               PASS=$((PASS+1))
             else
               echo "   ❌ فشل (HTTP $HTTP)"
