@@ -2,6 +2,9 @@ name: Mirror IPAs - Remaining Only
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Mirror IPAs - Remaining Only"]
+    types: [completed]
 
 jobs:
   mirror:
@@ -15,13 +18,11 @@ jobs:
           TARGET_REPO: "ikira18/install"
           TAG: "ipa-mirror"
         run: |
-          # جيب الـ source
           curl -s \
             -H "Authorization: token $GH_PAT" \
             "https://raw.githubusercontent.com/ikira18/feather/main/source" \
             -o source.json
 
-          # جيب قائمة الملفات الموجودة بالريليس
           GH_TOKEN=$GH_PAT gh release view "$TAG" \
             -R "$TARGET_REPO" \
             --json assets \
@@ -29,14 +30,12 @@ jobs:
 
           echo "📦 موجود بالريليس: $(wc -l < existing.txt) ملف"
 
-          # استخرج التطبيقات الناقصة فقط
           node -e "
             const fs = require('fs');
             const data = JSON.parse(fs.readFileSync('source.json','utf8'));
             const existing = new Set(
               fs.readFileSync('existing.txt','utf8')
-                .trim().split('\n')
-                .map(f => f.trim())
+                .trim().split('\n').map(f => f.trim())
             );
             data.apps.forEach(a => {
               if (a.downloadURL && a.downloadURL.includes('dl.ikiraplus.workers.dev')) {
@@ -50,14 +49,14 @@ jobs:
           " > remaining.txt
 
           TOTAL=$(wc -l < remaining.txt)
-          echo "⏳ متبقي للتحميل: $TOTAL تطبيق"
+          echo "⏳ متبقي: $TOTAL تطبيق"
 
           if [ "$TOTAL" -eq 0 ]; then
-            echo "✅ كل التطبيقات موجودة!"
+            echo "✅ كل التطبيقات موجودة! لا يوجد شي للتحميل."
             exit 0
           fi
 
-          PASS=0; FAIL=0; COUNT=0
+          PASS=0; FAIL=0; SKIP=0; COUNT=0
 
           while IFS='|' read -r NAME URL SLUG; do
             COUNT=$((COUNT+1))
@@ -65,14 +64,33 @@ jobs:
             echo ""
             echo "[$COUNT/$TOTAL] ⬇️  $NAME"
 
+            # تحقق من الحجم قبل التحميل
+            SIZE_BYTES=$(curl -sI \
+              -H "User-Agent: Mozilla/5.0" \
+              -L "$URL" | grep -i content-length | tail -1 | tr -d '\r' | awk '{print $2}')
+
+            if [ -n "$SIZE_BYTES" ] && [ "$SIZE_BYTES" -gt 1073741824 ] 2>/dev/null; then
+              SIZE_GB=$(echo "scale=2; $SIZE_BYTES/1073741824" | bc)
+              echo "  ⏭️  تجاهل — الحجم ${SIZE_GB}GB (أكبر من 1GB)"
+              SKIP=$((SKIP+1))
+              continue
+            fi
+
             HTTP=$(curl -s -o "$FILENAME" -w "%{http_code}" \
               -L --max-time 600 --retry 2 \
               -H "User-Agent: Mozilla/5.0" \
               "$URL")
 
             if [ "$HTTP" = "200" ] && [ -s "$FILENAME" ]; then
+              ACTUAL_SIZE=$(stat -c%s "$FILENAME")
+              if [ "$ACTUAL_SIZE" -gt 1073741824 ]; then
+                echo "  ⏭️  تجاهل بعد التحميل — الحجم كبير"
+                rm -f "$FILENAME"
+                SKIP=$((SKIP+1))
+                continue
+              fi
               echo "  ✅ $(du -sh $FILENAME | cut -f1) — رفع..."
-              GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO"
+              GH_TOKEN=$GH_PAT gh release upload "$TAG" "$FILENAME" --clobber -R "$TARGET_REPO" || echo "  ⚠️ فشل الرفع، متابعة..."
               PASS=$((PASS+1))
             else
               echo "  ❌ فشل HTTP $HTTP"
@@ -83,6 +101,24 @@ jobs:
 
           echo ""
           echo "========================"
-          echo "✅ نجح: $PASS"
-          echo "❌ فشل: $FAIL"
+          echo "✅ نجح:    $PASS"
+          echo "❌ فشل:    $FAIL"
+          echo "⏭️  تجاهل: $SKIP"
           echo "========================"
+
+      - name: Trigger next run if still remaining
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          # تحقق إذا لا يزال يوجد تطبيقات ناقصة
+          REMAINING=$(wc -l < remaining.txt 2>/dev/null || echo 0)
+          if [ "$REMAINING" -gt 0 ]; then
+            echo "🔄 لا يزال يوجد $REMAINING تطبيق — تشغيل الدورة القادمة..."
+            curl -s -X POST \
+              -H "Authorization: token $GH_PAT" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/ikira18/feather/actions/workflows/mirror-apps.yml/dispatches" \
+              -d '{"ref":"main"}'
+          else
+            echo "✅ انتهى كل شي!"
+          fi
