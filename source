@@ -3329,6 +3329,18 @@
       "size": "18.1 MB",
       "category": "أدوات"
     },
+{
+      "name": "feffefef",
+      "bundleIdentifier": "com.ikiraplus.ilovefe-pdf",
+      "developerName": "iKiraPlus",
+      "version": "4.1.2",
+      "versionDate": "2026-06-19",
+      "downloadURL": "https://github.com/karbin98/karbin-ipa/releases/download/kata-ipa-7/Vood.Cinema.R_1.0.6_1739273148.ipa",
+      "iconURL": "https://github.com/karbin98/karbin-image/releases/download/kara-img-7/Vood.Cinema.png",
+      "localizedDescription": "ef",
+      "size": "124.1 MB",
+      "category": "دراسة وذكاء اصطناعي"
+    },
     {
       "name": "ilove pdf",
       "bundleIdentifier": "com.ikiraplus.ilove-pdf",
