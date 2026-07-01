@@ -3388,6 +3388,18 @@
       "localizedDescription": "",
       "size": "198.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "alliance at war",
+      "bundleIdentifier": "com.ikiraplus.alliance-at-war",
+      "developerName": "iKiraPlus",
+      "version": "2.1.3",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/alliance-at-war-2.1.3",
+      "iconURL": "https://play-lh.googleusercontent.com/8mAhyMHD2HJN2mUCWzNUB6ld1JgbC-QTW6xrMXChABMJTu3gO7V7NHCVA7YfQhwXOahEU2sPXOmWjQPxiYIcyQ=w240-h480-rw",
+      "localizedDescription": "",
+      "size": "576.6 MB",
+      "category": "ألعاب"
     }
   ]
 }
