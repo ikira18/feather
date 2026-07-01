@@ -93,12 +93,12 @@
       "name": "instagram IG",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "iKiraPlus",
-      "version": "433.0.0",
-      "versionDate": "2026-06-10",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/igformat433.0.0_if",
+      "version": "435.0.0",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/igformatv2.4.0",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f1/0e/9d/f10e9d3f-f0f1-ed93-5b07-ea71bcfb95a3/Prod-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
       "localizedDescription": "لتفعيل مميزات النسخة : \n- اضغط على زر الـبروفايل وستجيد ايقونة الريشه اضغط عليها وتفتح معك المميزات",
-      "size": "296.5 MB",
+      "size": "303.9 MB",
       "category": "تواصل"
     },
     {
