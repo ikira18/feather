@@ -3448,6 +3448,18 @@
       "localizedDescription": "",
       "size": "115.1 MB",
       "category": "تواصل"
+    },
+    {
+      "name": "x twitter - DL TWIgalaxy",
+      "bundleIdentifier": "com.ikiraplus.x-twitter---dl-twigalaxy",
+      "developerName": "iKiraPlus",
+      "version": "12.3",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/x_12.3_dltwitter-2.17_twigalaxy_1.13",
+      "iconURL": "https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebdd90aef8ef8c749e848_X-EverythingApp-Logo-Twitter.jpg",
+      "localizedDescription": "",
+      "size": "215.5 MB",
+      "category": "تواصل"
     }
   ]
 }
