@@ -3412,6 +3412,18 @@
       "localizedDescription": "",
       "size": "336.0 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "No Limit Drag Racing 2",
+      "bundleIdentifier": "com.ikiraplus.no-limit-drag-racing-2",
+      "developerName": "iKiraPlus",
+      "version": "2.2.18.2",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/no-limit-2.2.18.2",
+      "iconURL": "https://play-lh.googleusercontent.com/0cEXMXR4IUgdBUOdiIa2CnyKJVJ_zFgRHlPJEq6justVAJNG-dXklvoNnxp2kLpRJwg0C6oxVzNwRgjfMHH65Q=w240-h480-rw",
+      "localizedDescription": "",
+      "size": "848.2 MB",
+      "category": "ألعاب"
     }
   ]
 }
