@@ -177,12 +177,12 @@
       "name": "Turrit",
       "bundleIdentifier": "com.turrit.Telegram",
       "developerName": "iKiraPlus",
-      "version": "1.4.8",
-      "versionDate": "2026-05-11",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/turrit_1.4.8",
+      "version": "1.8",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/turrit_1.5.0_lead_1.4.3",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/4f/43/d94f43ed-0cb5-d9a5-f50f-8480fb7e5304/Turrit-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
       "localizedDescription": "لتفعيل مميزات النسخة اتبع التالي :\n- الاعدادات - انزل للاسفل - اضغط ضغطة مطوله على ايقونه ( اسال سوالا )\nومبروك تم فتح المميزات",
-      "size": "81.1 MB",
+      "size": "92.5 MB",
       "category": "تواصل"
     },
     {
