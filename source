@@ -3460,6 +3460,18 @@
       "localizedDescription": "",
       "size": "215.5 MB",
       "category": "تواصل"
+    },
+    {
+      "name": "Home Workout - No Equipment",
+      "bundleIdentifier": "com.ikiraplus.home-workout---no-equipment",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/home-workout-no-equipments",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYsd192C2jPwsWzwQuSWzaJ-GF-Uk2duI0QBxlqKqUhg&s=10",
+      "localizedDescription": "",
+      "size": "184.9 MB",
+      "category": "أدوات"
     }
   ]
 }
