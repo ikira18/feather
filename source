@@ -3352,6 +3352,18 @@
       "localizedDescription": "",
       "size": "62.5 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "discord Al-Asd",
+      "bundleIdentifier": "com.ikiraplus.discord-al-asd",
+      "developerName": "iKiraPlus",
+      "version": "335.0",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/discord_asd_335.0_v1.0",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFANoGT3f1gbelunDdQcakC4bresVKb4LPIFx2-T4_Q&s",
+      "localizedDescription": "",
+      "size": "110.0 MB",
+      "category": "تواصل"
     }
   ]
 }
