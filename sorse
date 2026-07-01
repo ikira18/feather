@@ -3376,6 +3376,18 @@
       "localizedDescription": "",
       "size": "327.7 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "road trip",
+      "bundleIdentifier": "com.ikiraplus.road-trip",
+      "developerName": "iKiraPlus",
+      "version": "2604.0.2",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/road-trip-2604.0.2",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpg_ujRgNgOz3qRLTyy907YoaRbYZy16dw4KPnCkDMgA&s=10",
+      "localizedDescription": "",
+      "size": "198.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
