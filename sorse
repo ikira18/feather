@@ -3364,6 +3364,18 @@
       "localizedDescription": "",
       "size": "110.0 MB",
       "category": "تواصل"
+    },
+    {
+      "name": "Granny: Chapter Two",
+      "bundleIdentifier": "com.ikiraplus.granny-chapter-two",
+      "developerName": "iKiraPlus",
+      "version": "1.1.14",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/granny-chapter-two-1.1.14",
+      "iconURL": "https://play-lh.googleusercontent.com/X_9WQbosx62FK2V2BK1Tuh2f3FuwyhrznBBodZ6nxGphIC0PwU0YxTVDRpOhbVKquz4UzgZ4SbjwQhVYOvEGnA",
+      "localizedDescription": "",
+      "size": "327.7 MB",
+      "category": "ألعاب"
     }
   ]
 }
