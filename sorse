@@ -3424,6 +3424,18 @@
       "localizedDescription": "",
       "size": "848.2 MB",
       "category": "ألعاب"
+    },
+    {
+      "name": "super mario run",
+      "bundleIdentifier": "com.ikiraplus.super-mario-run",
+      "developerName": "iKiraPlus",
+      "version": "3.4.2",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/mario-run-3.4.2",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK76Yn-XyDEBKbnvXBH5_a5QrKFDLZWt-J3C_JF-hWBw&s=10",
+      "localizedDescription": "",
+      "size": "245.5 MB",
+      "category": "ألعاب"
     }
   ]
 }
