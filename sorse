@@ -3484,6 +3484,18 @@
       "localizedDescription": "",
       "size": "369.6 MB",
       "category": "أدوات"
+    },
+    {
+      "name": "auto clicker",
+      "bundleIdentifier": "com.ikiraplus.auto-clicker",
+      "developerName": "iKiraPlus",
+      "version": "last version",
+      "versionDate": "2026-07-01",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/auto-clicker",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6owtShBXlysFmACOpbcwzxFNZd5vyzELlbMeH-_ckg&s",
+      "localizedDescription": "",
+      "size": "9.5 MB",
+      "category": "أدوات"
     }
   ]
 }
